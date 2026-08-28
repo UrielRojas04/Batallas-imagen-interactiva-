@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, sans-serif;
+  overscroll-behavior-y: none; /* Previene reload on mobile swipe down */
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
