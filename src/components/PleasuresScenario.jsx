@@ -35,7 +35,7 @@ export default function PleasuresScenario() {
       <InteractiveObject 
         className="bola-disco" 
         parallaxFactor="0.08" 
-        src={`${import.meta.env.BASE_URL}img/bola disco.png`} 
+        src={`${import.meta.env.BASE_URL}img/bola-disco.png`} 
         alt="Bola Disco" 
         onClick={() => setIsModalOpen(true)}
       />
