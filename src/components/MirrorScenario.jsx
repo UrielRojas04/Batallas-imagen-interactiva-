@@ -59,6 +59,11 @@ export default function MirrorScenario() {
           "Por eso les digo: dejen que el Espíritu Santo los guíe en la vida. Entonces no se dejarán llevar por los impulsos de la naturaleza pecaminosa. La naturaleza pecaminosa desea hacer el mal, que es precisamente lo contrario de lo que quiere el Espíritu. Y el Espíritu nos da deseos que se oponen a lo que desea la naturaleza pecaminosa. Estas dos fuerzas luchan constantemente entre sí, entonces ustedes no son libres para llevar a cabo sus buenas intenciones."
         </p>
       </Modal>
+
+      {/* Indicador de scroll */}
+      <div className="scroll-indicator">
+        Desliza para explorar <span className="arrow">➔</span>
+      </div>
     </section>
   );
 }

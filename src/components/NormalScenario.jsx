@@ -25,6 +25,11 @@ export default function NormalScenario() {
       <div className="parallax-layer cloud-3" style={{ '--parallax-factor': '0.04' }}>
         <img src={`${import.meta.env.BASE_URL}img/nubes 3.png`} alt="Nube 3" />
       </div>
+
+      {/* Indicador de scroll */}
+      <div className="scroll-indicator">
+        Desliza para explorar <span className="arrow">➔</span>
+      </div>
     </section>
   );
 }

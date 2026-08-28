@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export function useParallaxEngine() {
+export function useParallaxEngine(onIndexChange) {
   const containerRef = useRef(null);
   const rafRef = useRef(null);
 
@@ -9,10 +9,20 @@ export function useParallaxEngine() {
     if (!container) return;
 
     let currentScroll = container.scrollLeft;
+    let lastIndex = 0;
 
     const updateScroll = () => {
       // Inyectar variable CSS en el elemento raíz para que todos los hijos puedan leerla
       document.documentElement.style.setProperty('--scroll-x', `${currentScroll}px`);
+      
+      if (onIndexChange) {
+        const index = Math.round(currentScroll / window.innerWidth);
+        if (index !== lastIndex) {
+          lastIndex = index;
+          onIndexChange(index);
+        }
+      }
+      
       rafRef.current = null;
     };
 

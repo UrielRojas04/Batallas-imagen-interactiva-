@@ -91,6 +91,11 @@ export default function SpiritualScenario() {
           "Pues no luchamos contra enemigos de carne y hueso, sino contra gobernadores malignos y autoridades del mundo invisible, contra fuerzas poderosas de este mundo tenebroso y contra espíritus malignos de los lugares celestiales. Por lo tanto, pónganse todas las piezas de la armadura de Dios para poder resistir al enemigo en el tiempo del mal. Así, después de la batalla, todavía seguirán de pie, firmes."
         </p>
       </Modal>
+
+      {/* Indicador de scroll */}
+      <div className="scroll-indicator">
+        Desliza para explorar <span className="arrow">➔</span>
+      </div>
     </section>
   );
 }
