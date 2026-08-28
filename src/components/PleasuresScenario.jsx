@@ -53,10 +53,10 @@ export default function PleasuresScenario() {
       {/* Modal del Escenario */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} theme="pleasures">
         <h2 className="biblical-title" style={{ fontSize: '1.8rem', textShadow: '0 0 10px rgba(255,20,147,0.5)', opacity: 1 }}>
-          Filipenses 4:12
+          1 Juan 2:15-16
         </h2>
         <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '1.1rem', lineHeight: '1.6', marginTop: '15px' }}>
-          "Sé vivir con casi nada o con todo lo necesario. He aprendido el secreto de vivir en cualquier situación, sea con el estómago lleno o vacío, con mucho o con poco."
+          "No amen a este mundo ni las cosas que les ofrece, porque cuando aman al mundo no tienen el amor del Padre en ustedes. Pues el mundo solo ofrece un intenso deseo por el placer físico, un deseo insaciable por todo lo que vemos, y el orgullo de nuestros logros y posesiones. Nada de eso proviene del Padre, sino que viene del mundo."
         </p>
       </Modal>
     </section>
