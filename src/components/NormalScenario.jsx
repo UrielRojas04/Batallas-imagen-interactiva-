@@ -30,6 +30,11 @@ export default function NormalScenario() {
       <div className="scroll-indicator">
         Desliza para explorar <span className="arrow">➔</span>
       </div>
+
+      {/* Firma de Autor */}
+      <div className="author-signature">
+        por Uriel Rojas
+      </div>
     </section>
   );
 }

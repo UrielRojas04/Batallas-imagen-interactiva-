@@ -345,7 +345,7 @@ html, body, #root {
 /* Indicador de scroll */
 .scroll-indicator {
   position: absolute;
-  bottom: 12vh; /* Un poco más arriba a pedido del usuario */
+  bottom: 16vh; /* Un poco más abajo a pedido del usuario */
   right: 5vw;
   font-family: 'Cinzel', serif;
   font-size: 0.75rem; /* Más chiquito a pedido del usuario */
@@ -374,6 +374,22 @@ html, body, #root {
 .scroll-indicator .arrow {
   font-size: 0.95rem; /* Flecha más chiquita */
   animation: bounce-right 1.5s ease-in-out infinite;
+}
+
+/* Firma de autor */
+.author-signature {
+  position: absolute;
+  bottom: 18vh;
+  left: 5vw;
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem; /* Firma más discreta y pequeña */
+  color: #fce8b2; /* Dorado igual al título */
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  z-index: 15;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.6);
+  pointer-events: none;
+  opacity: 0.85;
 }
 
 @keyframes bounce-right {
