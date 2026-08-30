@@ -40,6 +40,12 @@ export default function MirrorScenario() {
         onClick={() => setIsModalOpen(true)}
       />
 
+      {/* Indicador de Toca Aquí */}
+      <div className="parallax-layer click-hint hint-pelota" style={{ '--parallax-factor': '0.1' }}>
+        <span className="hint-arrow">▼</span>
+        <span className="hint-text">TOCA AQUÍ</span>
+      </div>
+
       {/* Título en el cielo */}
       <div className="parallax-layer title-layer" style={{ '--parallax-factor': '0.05' }}>
         <h1 

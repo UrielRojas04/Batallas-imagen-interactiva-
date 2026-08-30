@@ -521,3 +521,54 @@ html, body, #root {
   0% { transform: translateY(30px) scale(0.95); opacity: 0; }
   100% { transform: translateY(0) scale(1); opacity: 1; }
 }
+
+/* Indicadores de Toca Aquí */
+.click-hint {
+  position: absolute; /* Reasegurar */
+  height: auto !important; /* Sobreescribir el 100vh de parallax-layer para que no se desplace el texto */
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem; /* Mucho más grande a pedido del usuario */
+  color: #fce8b2;
+  font-weight: bold; /* Para que resalte más */
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.8);
+  pointer-events: none; /* No bloquear clicks hacia el objeto */
+  animation: bounce-up-down 1.5s ease-in-out infinite;
+  opacity: 1;
+}
+
+.click-hint .hint-arrow {
+  font-size: 1.6rem; /* Flecha más grande */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+}
+
+@keyframes bounce-up-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Posiciones exactas por escenario */
+.hint-armadura {
+  top: auto;
+  bottom: 30vh; /* Sobre la armadura */
+  left: 12vw;
+  width: 120px;
+}
+
+.hint-pelota {
+  top: auto;
+  bottom: 35vh; /* Más arriba */
+  left: 2vw; /* Más a la izquierda */
+  width: 120px;
+}
+
+.hint-bola-disco {
+  top: 8vh; /* Más arriba, a pedido del usuario */
+  bottom: auto;
+  left: calc(50% - 60px);
+  width: 120px;
+}

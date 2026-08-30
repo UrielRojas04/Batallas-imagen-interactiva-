@@ -50,6 +50,12 @@ export default function SpiritualScenario() {
         onClick={() => setIsModalOpen(true)}
       />
 
+      {/* Indicador de Toca Aquí */}
+      <div className="parallax-layer click-hint hint-armadura" style={{ '--parallax-factor': '0.1' }}>
+        <span className="hint-arrow">▼</span>
+        <span className="hint-text">TOCA AQUÍ</span>
+      </div>
+
       {/* Ángel 4 arriba a la izquierda */}
       <InteractiveObject 
         className="angel-4" 

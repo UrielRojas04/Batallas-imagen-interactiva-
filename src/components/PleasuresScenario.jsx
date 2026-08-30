@@ -40,6 +40,12 @@ export default function PleasuresScenario() {
         onClick={() => setIsModalOpen(true)}
       />
 
+      {/* Indicador de Toca Aquí */}
+      <div className="parallax-layer click-hint hint-bola-disco" style={{ '--parallax-factor': '0.08' }}>
+        <span className="hint-text">TOCA AQUÍ</span>
+        <span className="hint-arrow">▲</span>
+      </div>
+
       {/* Título en el cielo */}
       <div className="parallax-layer title-layer" style={{ '--parallax-factor': '0' }}>
         <h1 
